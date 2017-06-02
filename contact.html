@@ -1,0 +1,187 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<style>
+		.footer a{
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+		.footer{
+			line-height: 25px;
+			font-size: 15px;
+			color: #FFFFFF;
+		}
+	</style>
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<!--<a href="index.html"><img src="images/logo.png" alt=""/> </a>-->
+			<p style="color:#fff;">书来“友”往</p>
+		</div>
+		<div class="social-icons">
+		    <ul>
+				<li><a href="login.html" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li class="active"><a href="index.html">主页</a></li>
+				<li><a href="service.html">分类</a></li>
+				<li><a href="blog.html">会员</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="search...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu">
+        	<ul>
+				<li class="active"><a href="index.html">主页</a></li>
+				<li><a href="service.html">分类</a></li>
+				<li><a href="blog.html">会员</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>联系我们</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+	 	 <div class="contact">				
+					<div class="contact_info">
+						<h2 class="style">联系</h2>
+			    	 		<div class="map">
+					   			<iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#777777;text-align:left;font-size:13px;">查看地图</a></small>
+					   		</div>
+      				</div>
+				  <div class="contact-form">
+			 	 <div class="content">
+		 	 	<h2>联系我们</h2>
+		 	 </div>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span><label>姓名</label></span>
+						    	<span><input name="userName" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-mail邮箱</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>手机号</label></span>
+						    	<span><input name="userPhone" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>内容</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" class="" value="提交"></span>
+						  </div>
+					    </form>
+				    </div>
+  				<div class="clear"> </div>		
+			  </div>
+		</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<br>
+		<p style="text-align: center">Copyright 2017 iec.zzuli.edu.cn. All rights reserved.</p>
+		<p style="text-align: center">郑州轻工业学院国际教育学院互联网专业</p>
+		<p style="text-align: center">
+			<a href="#">加入我们</a> ·
+			<a href="contact.html">联系我们</a>
+		</p>
+		<p style="text-align: center"> 当前版本：c1.0.0 ·
+			<a href="http://www.zzili.edu.cn/">郑州轻工业学院</a> ·
+			<a href="http://my.zzuli.edu.cn/">信息门户</a> ·
+			<a href="http://jiaowu.zzuli.edu.cn/jwweb/">教务系统</a>
+			<br>
+			<a href="http://www.miitbeian.gov.cn/">豫ICP备16029589号-1
+			</a>
+		</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style>
+        .footer a{
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .footer{
+            line-height: 25px;
+            font-size: 15px;
+            color: #FFFFFF;
+        }
+        .form-signin {
+            max-width: 330px;
+            padding-top: 30px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading{
+            font-size: 50px;
+            color: #444;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+    </style>
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <!--<a href="index.html"><img src="images/logo.png" alt=""/> </a>-->
+                <p style="color:#fff;">书来“友”往</p>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="login.html" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+    <div class="wrap">
+        <div class="header_sub">
+            <div class="h_menu">
+                <ul>
+                    <li class="active"><a href="index.html">主页</a></li>
+                    <li><a href="service.html">分类</a></li>
+                    <li><a href="blog.html">会员</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="h_search">
+                <form>
+                    <input type="text" value="" placeholder="search...">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">主页</a></li>
+                    <li><a href="service.html">分类</a></li>
+                    <li><a href="blog.html">会员</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="/iphone/search.html">
+                    <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+                </form>
+            </div>
+            <div class="sub-head">
+                <ul>
+                    <li><a href="#" id="menu">Menu  <span></span></a></li>
+                    <li><a href="#" id="search">Search <span></span></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <script type="text/javascript">
+                $(".menu,.search").hide();
+                $("#menu").click(function(){
+                    $(".menu").toggle();
+                    $(".search").hide();
+                    $("#search").removeClass("active");
+                    $("#menu").toggleClass("active");
+                });
+                $("#search").click(function(){
+                    $(".search").toggle();
+                    $(".menu").hide();
+                    $("#menu").removeClass("active");
+                    $("#search").toggleClass("active");
+                    $(".text").focus();
+                });
+            </script>
+            <script type="text/javascript" src="js/script.js"></script>
+            <div class="clear"></div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+    <div class="wrap">
+        <div class="top">
+            <h2>欢迎登陆</h2>
+        </div>
+    </div>
+</div>
+<!-- start main -->
+<div class="wrap">
+    <div class="main">
+        <div id="content">
+            <form class="form-signin">
+                <h2 class="form-signin-heading" style="text-align: center">请登录</h2>
+                <br>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="用户名" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="密码" required="">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> 记住密码
+                    </label>
+                </div>
+                <button class="btn btn-primary" type="submit">登录</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-primary" href="register.html">注册</a>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+    <div class="wrap">
+        <div class="footer">
+            <br>
+            <p style="text-align: center">Copyright 2017 iec.zzuli.edu.cn. All rights reserved.</p>
+            <p style="text-align: center">郑州轻工业学院国际教育学院互联网专业</p>
+            <p style="text-align: center">
+                <a href="#">加入我们</a> ·
+                <a href="contact.html">联系我们</a>
+            </p>
+            <p style="text-align: center"> 当前版本：c1.0.0 ·
+                <a href="http://www.zzili.edu.cn/">郑州轻工业学院</a> ·
+                <a href="http://my.zzuli.edu.cn/">信息门户</a> ·
+                <a href="http://jiaowu.zzuli.edu.cn/jwweb/">教务系统</a>
+                <br>
+                <a href="http://www.miitbeian.gov.cn/">豫ICP备16029589号-1
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

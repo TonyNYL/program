@@ -1,0 +1,196 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Blog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style>
+		.footer a{
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+		.footer{
+			line-height: 25px;
+			font-size: 15px;
+			color: #FFFFFF;
+		}
+	</style>
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<!--<a href="index.html"><img src="images/logo.png" alt=""/> </a>-->
+			<p style="color:#fff;">书来“友”往</p>
+		</div>
+		<div class="social-icons">
+		    <ul>
+				<li><a href="login.html" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li class="active"><a href="index.html">主页</a></li>
+				<li><a href="service.html">分类</a></li>
+				<li><a href="blog.html">会员</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="search...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu">
+        	<ul>
+				<li class="active"><a href="index.html">主页</a></li>
+				<li><a href="service.html">分类</a></li>
+				<li><a href="blog.html">会员</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>会员主页</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+<div class="main">
+		<div class="blog">
+			<div class="blog_list">
+				<h2>“经验丰富的人读书用两只眼睛,一只眼睛看到纸面上的话,另一眼睛看到纸的背面”</h2>
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-01-01,   &nbsp;<a href="index.html">九夜茴</a></h5>
+				<div class="blog_para">
+					<p class="para"><a  href="details.html"><img src="images/blog1.jpg" alt="" style="border-radius: 50%"></a><br>
+						总体来说，就是一本很煽情的小说。一个也算挺成功的人从认识的那么多人的思考，谈论的一些对人生的感悟。不是老生常谈。对于我这种刚踏入社会，在北京打拼的人，可以汲取一些教训，或者发现原来我和那么多人思想都是差不多的。我没有那么与众不同，我也没有我原以为那么无私独特，或者我的狭隘的想法其实大家都有。
+						如果让我写这样的很多人的回忆，我写不出，因为我发现我对别人真的不是很关心，永远以自我为中心。我不会试图去理解别人怎么想，看别人也是如此表面，浅薄。
+						同时因为我的无趣狭隘的本质也导致了我的圈子也就这样的水平而已。
+					</p>
+					<div class="read_more">
+						 <a class="btn" href="details.html">了解更多</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			 </div>
+			<div class="blog_list">
+				<h2>“一个爱书的人,他必定不致于缺少一个忠实的朋友,一个良好的老师,一个可爱的伴侣”</h2>
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-01-02,   &nbsp;<a href="index.html">鹿子先森</a></h5>
+				<div class="blog_para">
+					<p class="para"><a  href="details.html"><img src="images/blog2.jpg" alt="" style="border-radius: 50%"></a><br>
+						南有乔木，不可休思。我写这句话的时候最想的就是你。你说我的名字有最美好的愿望。你不知道，我最轻浅的念想。不过是和你一起仰望天堂。合上书，我最想大声的喊一句，那就是：曲蔚然，我恨你！！！！！真的，恨死你了！这种人有什么资格活在这个世界上？？你的存在不就是意味着增加别人的痛苦么？！
+						而你，居然欺负自己好兄弟的未婚妻！你，到底是不是人啊？！舒雅望，你的清秀、你的执着、你的无助、你内心的纠结，你的一颦一笑，都牵扯着我们的内心。好希望你能得到你想要的。你想要的真的很简单！可是，命运却总是希望你一生都坎坷。我们，无能为力。
+					</p>
+					<div class="read_more">
+						 <a class="btn" href="details.html">了解更多</a>
+					</div>
+				</div>
+			   <div class="clear"></div>				
+			 </div>
+			<div class="blog_list">
+				<h2>“书籍是全世界的营养品.生活里没有书籍,就好像没有阳光；智慧里没有书籍,就好像鸟儿没有翅膀”</h2>
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-01-03,   &nbsp;<a href="index.html">考拉koala</a></h5>
+				<div class="blog_para">
+					<p class="para"><a  href="details.html"><img src="images/blog3.jpg" alt=""style="border-radius: 50%" ></a><br>
+						“总有几分种，其中的每一秒，你都愿意那一年去换取；总有几颗眼泪，其中的每一次抽泣，你都愿意去拿满手的承诺去代替；总有极端场景，其中的每幅画面，你都愿意去拿全部的力量去铭记；总有几句话，其中的每个字眼，你都愿意拿所有的夜晚去复习。”真的是这样的啊。
+						“这些都是你的心事，只有我读得懂。别人走得太快，看都看不见。白天你的影子都在自己脚边，晚上你的影子就变成黑夜，包裹我的睡眠。”写得太好，写得太美，一个男人的心思到达这种细腻的程度，真的融化了一切……
+					</p>
+					<div class="read_more">
+						 <a class="btn" href="details.html">了解更多</a>
+					</div>
+				</div>
+			   <div class="clear"></div>				
+			 </div>		 
+			</div>
+		</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<br>
+		<p style="text-align: center">Copyright 2017 iec.zzuli.edu.cn. All rights reserved.</p>
+		<p style="text-align: center">郑州轻工业学院国际教育学院互联网专业</p>
+		<p style="text-align: center">
+			<a href="#">加入我们</a> ·
+			<a href="contact.html">联系我们</a>
+		</p>
+		<p style="text-align: center"> 当前版本：c1.0.0 ·
+			<a href="http://www.zzili.edu.cn/">郑州轻工业学院</a> ·
+			<a href="http://my.zzuli.edu.cn/">信息门户</a> ·
+			<a href="http://jiaowu.zzuli.edu.cn/jwweb/">教务系统</a>
+			<br>
+			<a href="http://www.miitbeian.gov.cn/">豫ICP备16029589号-1
+			</a>
+		</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
